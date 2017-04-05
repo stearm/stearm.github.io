@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #31363d;
+  color: #d5dce8;
+  font-family: 'Cousin', monospace;
+}
+
+a {
+  color: #d5dce8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo-container {
+  text-align: center;
+}
+
+.photo-container > img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-container > div {
+  padding: 5px 10px;
+  letter-spacing: 2px
+}
+
+.name {
+  font-size: 36px;
+}
+
+.arr {
+  color: #bff94a;
+}
+
+.home {
+  color: #2577b2;
+}
