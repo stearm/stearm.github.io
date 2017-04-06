@@ -5,6 +5,7 @@ html, body {
   background: #31363d;
   color: #d5dce8;
   font-family: 'Cousin', monospace;
+  letter-spacing: 2px;
 }
 
 a {
@@ -34,7 +35,6 @@ a {
 
 .bio-container > div {
   padding: 5px 10px;
-  letter-spacing: 2px
 }
 
 .name {
@@ -47,4 +47,11 @@ a {
 
 .home {
   color: #2577b2;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    letter-spacing: 0;
+  }
 }
