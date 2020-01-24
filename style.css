@@ -1,0 +1,124 @@
+:root {
+  --bg-col: #30404c;
+  --ff-col: #93d7dd;
+  --title-ff: "Bowlby One SC", cursive;
+  --ff: "Roboto Mono", monospace;
+}
+
+html,
+body {
+  background-color: var(--bg-col);
+  font-family: var(--ff);
+  color: var(--ff-col);
+  width: 100vw;
+  letter-spacing: 0.5px;
+}
+
+body {
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: var(--title-ff);
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: var(--title-ff);
+}
+
+li {
+  padding: 5px;
+}
+
+.photo {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  right: -250px;
+  top: -42px;
+  box-shadow: 10px 10px 0px 2px var(--ff-col);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.bio-wrapper {
+  position: relative;
+  display: flex;
+  flex-basis: 60%;
+  flex-direction: column;
+  line-height: 1.4rem;
+}
+
+.short-bio {
+  text-align: justify;
+  margin-top: 40px;
+  font-family: var(--ff);
+  color: var(--ff-col);
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.projects > h2 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+.projects li {
+  font-size: 0.8rem;
+}
+
+.contacts-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 25px;
+  right: 40px;
+  margin-left: 40px;
+}
+.contacts-wrapper > a {
+  margin-left: 20px;
+  margin-top: -2px;
+}
+.contacts-wrapper > a:nth-child(2) {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 25px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio-wrapper {
+    flex-basis: 100%;
+  }
+
+  .contacts-wrapper {
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    margin-top: 40px;
+    bottom: unset;
+    right: unset;
+    margin-left: unset;
+  }
+
+  .photo {
+    display: none;
+  }
+}
