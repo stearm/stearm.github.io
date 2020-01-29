@@ -3,6 +3,7 @@
   --ff-col: #93d7dd;
   --title-ff: "Bowlby One SC", cursive;
   --ff: "Roboto Mono", monospace;
+  --ff-size: 0.8rem;
 }
 
 html,
@@ -65,7 +66,7 @@ li {
   margin-top: 40px;
   font-family: var(--ff);
   color: var(--ff-col);
-  font-size: 0.8rem;
+  font-size: var(--ff-size);
   z-index: 1;
 }
 
@@ -74,7 +75,7 @@ li {
   margin-bottom: 5px;
 }
 .projects li {
-  font-size: 0.8rem;
+  font-size: var(--ff-size);
 }
 
 .contacts-wrapper {
@@ -88,6 +89,7 @@ li {
 .contacts-wrapper > a {
   margin-left: 20px;
   margin-top: -2px;
+  font-size: var(--ff-size);
 }
 .contacts-wrapper > a:nth-child(2) {
   margin-left: 10px;
