@@ -13,6 +13,7 @@ body {
   color: var(--ff-col);
   width: 100vw;
   letter-spacing: 0.5px;
+  overflow: hidden;
 }
 
 body {
@@ -70,7 +71,15 @@ li {
   z-index: 1;
 }
 
-.projects > h2 {
+.projects {
+  height: 45vh;
+  overflow-y: scroll;
+  margin-top: 40px;
+  border-right: 1px solid var(--ff-col);
+  padding-right: 10px;
+}
+
+.projects > h2:not(:first-child) {
   margin-top: 40px;
   margin-bottom: 5px;
 }
@@ -96,6 +105,11 @@ li {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+  }
+
   body {
     padding: 25px;
   }
