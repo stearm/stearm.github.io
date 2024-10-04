@@ -21,6 +21,15 @@ body {
   box-sizing: border-box;
 }
 
+.p-body {
+  margin-top: 20px;
+}
+
+.pwn-flag {
+  width: 30px;
+  height: auto;
+}
+
 a, a:visited, a:hover, a:active {
   color: var(--ff-col);
   cursor: pointer;
