@@ -2,6 +2,7 @@
   --bg-col: #ffffff;
   --ff-col: #000000;
   --shadow-profile-col: #4c8353;
+  --cpts-link-col: #50c05f;
   --title-ff: "Roboto Mono", monospace;
   --ff: "Courier Prime", monospace;
   --ff-size: 0.9rem;
@@ -19,6 +20,11 @@ body {
 body {
   padding: 100px;
   box-sizing: border-box;
+}
+
+.cpts > a, .cpts > a:hover {
+  font-weight: 800;
+  color: var(--cpts-link-col);
 }
 
 .p-body {
